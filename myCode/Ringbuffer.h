@@ -51,6 +51,7 @@ public:
 		}
 		item = data[readIndex++];
 		fillLevel--;
+		return true;
 	}
 
 	void clear()
