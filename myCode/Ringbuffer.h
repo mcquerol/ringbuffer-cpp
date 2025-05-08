@@ -34,7 +34,13 @@ public:
 
 	bool write(const T& item)
 	{
-
+		if(fillLevel >= N)
+		{
+			return false;
+		}
+		data[writeIndex++] = item;
+		fillLevel++;
+		return true;
 	}
 
 	bool read(T& item) const
