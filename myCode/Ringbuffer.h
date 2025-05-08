@@ -45,7 +45,12 @@ public:
 
 	bool read(T& item) const
 	{
-
+		if(fillLevel <= 0)
+		{
+			return false;
+		}
+		item = data[readIndex++];
+		fillLevel--;
 	}
 
 	void clear()
