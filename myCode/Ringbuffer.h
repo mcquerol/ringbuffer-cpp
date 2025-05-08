@@ -29,7 +29,7 @@ public:
 
 	~Ringbuffer()
 	{
-
+		delete[] data;
 	}
 
 	bool write(const T& item)
