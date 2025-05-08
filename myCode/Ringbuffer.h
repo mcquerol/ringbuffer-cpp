@@ -43,7 +43,7 @@ public:
 		return true;
 	}
 
-	bool read(T& item) const
+	bool read(T& item)
 	{
 		if(fillLevel <= 0)
 		{
