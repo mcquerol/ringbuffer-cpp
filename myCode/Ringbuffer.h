@@ -46,7 +46,7 @@ public:
 
 	bool isEmpty() const
 	{
-
+		return fillLevel == 0;
 	}
 
 	size_t size() const
