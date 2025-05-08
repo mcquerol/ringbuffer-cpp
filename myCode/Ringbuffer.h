@@ -44,7 +44,10 @@ public:
 
 	void clear()
 	{
-
+		data = 0;
+		fillLevel = 0;
+		readIndex = 0;
+		writeIndex = 0;
 	}
 
 	bool isEmpty() const
