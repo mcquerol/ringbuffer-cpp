@@ -21,7 +21,10 @@ private:
 public:
 	Ringbuffer()
 	{
-
+		data = new T[N];
+		fillLevel = 0;
+		readIndex = 0;
+		writeIndex = 0;
 	}
 
 	~Ringbuffer()
